@@ -11,6 +11,9 @@ def insert_sort(a:list):
 
 
 def choise_sort(a:list):
+    """ 
+       Choise sort
+    """
     for i in range(len(a)-1):
         min_index=i
         for j in range(i+1,len(a)):
