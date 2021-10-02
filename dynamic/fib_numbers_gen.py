@@ -6,6 +6,6 @@ def fibgen(N):
         yield n+l
         n,l = n+l,n
 
-g = fingen(100)
+g = fibgen(100)
 for i in g:
     print(i)
