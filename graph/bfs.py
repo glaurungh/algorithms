@@ -39,5 +39,12 @@ print(distances)
 print(parents)
 
 start_vertex = 0
-end_vertex = 9
+end_vertex = 5
 vertex = end_vertex
+path = []
+while not parents[vertex] is None:
+    path.append(vertex)
+    vertex = parents[vertex]
+path.append(start_vertex)
+path = path[::-1]
+print(path)
