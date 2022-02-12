@@ -46,8 +46,7 @@ def get_strong_components(graph, stack):
     while stack:
         v = stack.popleft()
         if v not in used:
-            component = get_strong_component(rG,v,used)
-            strong_components.append(component)
+            strong_components.append(get_strong_component(rG,v,used))
     return strong_components
 
 def get_strong_component(graph, vertex, used, component = None):
